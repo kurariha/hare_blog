@@ -27,7 +27,7 @@ class UpdatePostRequest extends FormRequest
         ];
 
         if ($this->file('image')) {
-            $rule['image'] = 'required|file|image|mimes:jpg,png';
+            $rule['image'] = 'required|file|image|mimes:jpg,png,webp';
         }
 
         return $rule;
